@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1e90ff;
+  --primary-color-darker: #1773cd;
+  --secondary-color: forestgreen;
+  --pagination-color: #808080;
+  --pagination-color-darker: #666;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input, button {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: #F0F0F0;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+input {
+    padding: 0.5em;
+}
+
+.button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+.form-group {
+    margin: 1em 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+#movie-pagination li a {
+    margin: 0 0.5em;
+    padding: 0.5em;
+    background-color: var(--pagination-color);
+    color: white;
+    border-radius: 0.2em;
+    transition: background-color 0.5s;
+}
+
+#movie-pagination li a {
+    color: white;
+    text-decoration: none;
+}
+
+#movie-pagination li a:hover {
+    text-decoration: none;
+    background-color: var(--pagination-color-darker);
+}
+
+#movie-pagination li a:visited {
+    text-decoration: none;
+}
+
+#error {
+    color: white;
+    background-color: firebrick;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}

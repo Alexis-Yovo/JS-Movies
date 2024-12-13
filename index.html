@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TMDB API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <main class="container">
+        <h1>TheMovieDB API</h1>
+        
+        <aside id="error" hidden></aside>
+        
+        <section id="search-movie">
+            <h2>Rechercher un film</h2>
+            
+            <form id="search-form">
+                <label for="search" id="visually-hidden"></label>
+                <input type="search" name="search" id="search" placeholder="Votre recherche">
+                <button class="button">Rechercher</button>
+            </form>
+        </section>
+        
+        <section id="display-movies">
+            <h2>Liste des films</h2>
+            <ul class="flex list-unstyled" id="movie-pagination"></ul>
+            <ul id="movie-list" class="list-unstyled"></ul>
+        </section>
+    </main>
+</body>
+</html>
